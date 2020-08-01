@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Google Drive Bypass Limit Download - JNCK Media</title>
+
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta name="author" content="JNCK MEDIA">
+<meta name="robots" content="all,index, follow">
+<meta name="language" content="en">
+<meta property="og:image" content="https://jnckmedia.com/assets/img/og-image.jpg" />
+<meta property="og:title" content="Google Drive Bypass Limit Download - JNCK Media" />
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://jnckmedia.com/gdrive/" />
+<meta property="og:description" content="Online tools to bypass Google Drive download limit" />
+<meta name="msvalidate.01" content="DB68201EC15DF918BF8C7615A16432AF" />
+<meta name="description" content="Online tools to bypass Google Drive download limit">
+<meta name="keyword" content="Google Drive, gdrive, bypass, limit, download, direct link, direct download">
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css" rel="stylesheet">
+<link href="/assets/css/adblock.css" rel="stylesheet" type="text/css" />
+
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-148876780-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-148876780-1');
+</script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+<script>
+    $(document).ready(function() {
+          $('form').on('submit', function(event) {
+              event.preventDefault();
+              var contactform = $('#myform');
+              var formresult = $('#results');
+              var formdata = $(contactform).serialize();
+              $.ajax({
+                  type: 'POST',
+                  url: "https://jnckmedia.com/gdrive/bypassNL",
+                  data: formdata,
+
+                  beforeSend: function() {
+            $("#hasil").show();
+            $(formresult).show();
+                      $(formresult).html("<center><i class='fas fa-circle-notch fa-spin fa-3x fa-fw'></i></center>");
+                  },
+                  success:function(response) {
+            $("#hasil").show();
+            $(formresult).show();
+                      $(formresult).html(response);
+                  },
+                  error:function(data) {
+            $("#hasil").show();
+                      $(formresult).addClass('alert alert-warning');
+                      $(formresult).html(data.responseText);
+                  }
+              });
+          });
+      });
+    </script>
+</head>
+<body>
+<div class="container">
+<div style="padding-top: 5%;">
+<div id="thebody">
+<center><h3>JNCK-DRIVE</h3>
+<small>Google Drive Bypass Limit Download</small></center>
+<div class="card" id="pilih" style="width: 22rem; margin-left: auto; margin-right: auto;">
+<div class="card-body">
+<h5 class="card-title">Input url / file id <a title="Clear All" style="margin-left:135px;" onclick="document.getElementById('link').value = ''"><i class="fas fa-times"></i></a></h5>
+<form class="from-inline" id="myform">
+<div class="form-group">
+
+<textarea rows="8" class="form-control" id="link" name="link" placeholder="List url or file id" autocomplete="off"></textarea>
+</div>
+<a class="btn btn-outline-dark float-left" id="btncontoh"> Contoh </a>
+<button class="btn btn-dark float-right" type="submit"> Bypass </button>
+</form>
+</div>
+</div>
+<br>
+<div class="card" id="hasil" style="width: 22rem; margin-left: auto; margin-right: auto; display: none;">
+<div class="card-body">
+<h5 class="card-title" id="yeay">Result</h5>
+<div id="results"></div>
+</div>
+</div>
+</div>
+<div class="card" id="contohnya" style="width: 22rem; margin-left: auto; margin-right: auto; display: none;">
+<div class="card-body">
+<div class="form-group">
+<p class="card-text">
+<b>Contoh url nya gimana sih ?</b><br>
+<font size="1">
+- https://drive.google.com/uc?id=<font color="red">QwErtYuiOPAsdFGHjkL</font><br>
+- https://drive.google.com/file/d/<font color="red">QwErtYuiOPAsdFGHjkL</font>/view<br>
+- https://drive.google.com/open?id=<font color="red">QwErtYuiOPAsdFGHjkL</font><br>
+</font>
+Gitu!
+<br><br>
+<b>Contoh file id gimana ?</b><br>
+Itu yang warna <font color="red">MERAH</font>
+<br><br>
+<b>Info!</b><br>
+Jika ingin bypass banyak file, cukup input list url atau list file id.<br>
+Gunakan ENTER (<i>newline</i>) untuk mengunduh banyak file.<br>
+Intinya 1 baris untuk 1 url / file id<br>
+</p>
+</div>
+</div>
+</div>
+<br>
+<div class="card" id="iniapaan" style="width: 22rem; margin-left: auto; margin-right: auto; display: none;">
+<div class="card-body">
+<div class="form-group">
+<p class="card-text">
+Paling males kan kalo mau download di Google Drive kena limit?<br>
+Apalagi server Google Drive terbilang sangat cepat untuk mengunduh file.<br><br>
+Cara umumnya kan harus "<i>Add to my drive</i>" terus "<i>Salin</i>" dan "<i>Make shareable link</i>" dulu.
+Via smartphone sih bisa aja, itu juga kalau mode dekstop diaktifkan. Dan tampilan Google Drive jadi kurang responsive<br><br>
+Nah tools ini dibuat untuk bypass limit itu, methodnya juga sama seperti yang dijabarkan diatas.
+Tetapi lebih disederhanakan aja cuma dengan "<i>Sign in with google</i>" terus paste link yang kena limit.
+Sesimple itu.<br><br>Yuk dicoba!<br>Bantu share juga buat yang belum tau kalo bisa hehe..
+</p>
+</div>
+</div>
+</div>
+<br>
+<br>
+<div class="card" style="width: 22rem; margin-left: auto; margin-right: auto;">
+<div class="card-body">
+<button class="btn btn-outline-dark" id="apaan"> Ini apaan? </button>
+<button class="btn btn-dark" id="btnapaan" style="display: none;">Back</button>
+</div>
+</div>
+<br>
+<p style="width: 18rem; margin-left: auto; margin-right: auto; font-size: 80%;" class="text-center text-muted">Developed with <span style="color: red;"><i class="fa fa-heart"></i></span> by <a target="_blank" href="https://web.facebook.com/jnckmedia/">JNCK Media</a></p>
+</div>
+<br>
+<div id="successAlert" class="alert alert-success" role="alert" style="display:none;"></div>
+<div id="errorAlert" class="alert alert-danger" role="alert" style="display:none;"></div>
+</div>
+</div>
+<script>
+        $('#apaan').click(function(){
+             $(this).hide();
+             $('#thebody').hide();
+             $('#iniapaan').show();
+             $('#btnapaan').show();
+			 $('#btncontoh').show();
+         });
+
+         $('#btnapaan').click(function(){
+             $(this).hide();
+             $('#thebody').show();
+             $('#iniapaan').hide();
+             $('#apaan').show();
+			 $('#contohnya').hide();
+			 $('#btncontoh').show();
+         });
+		 
+		 $('#btncontoh').click(function(){
+             $(this).hide();
+             $('#thebody').hide();
+			 $('#contohnya').show();
+             $('#btnapaan').show();
+			 $('#apaan').hide();
+         });
+    </script>
+<script src="https://content.jwplatform.com/libraries/NxsmWX2o.js"></script>
+<script type="text/javascript">
+		function openWindow() {
+			var win = window.open('https://jnckmedia.com/gdrive/OAuth', 'Get Token', 'width=750,height=660,top=70,left=100,resizable=1,menubar=yes', true);
+			win.focus();
+		}
+  </script>
+
+<script type='text/javascript'>
+      function downloadJSAtOnload(){var e=document.createElement("script");e.src="https://cdn.jsdelivr.net/gh/Arlina-Design/quasar@master/arlinablock.js",document.body.appendChild(e)}window.addEventListener?window.addEventListener("load",downloadJSAtOnload,!1):window.attachEvent?window.attachEvent("onload",downloadJSAtOnload):window.onload=downloadJSAtOnload;
+  </script>
+</body>
+</html>
